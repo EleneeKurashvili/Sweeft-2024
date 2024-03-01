@@ -1,0 +1,13 @@
+ public static boolean isValidSequence(int[] array, int[] sequence) {
+        int arrayIndex = 0;
+        int sequenceIndex = 0;
+
+        while (arrayIndex < array.length && sequenceIndex < sequence.length) {
+            if (array[arrayIndex] == sequence[sequenceIndex]) {
+                sequenceIndex++;
+            }
+            arrayIndex++;
+        }
+
+        return sequenceIndex == sequence.length;
+    }
